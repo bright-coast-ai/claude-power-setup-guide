@@ -7,7 +7,7 @@
   "guide": {
     "version": "3.4",
     "path": "claude-code-power-setup-guide.md",
-    "sha256": "a5e3ba03ffb143317c1541e1e08870704a8a9db1c4070c830734ecf4e1871d4e",
+    "sha256": "46624e0e6a91e4054ef37f5a17a8f0c0be8a2cdde223cb11a2bd1c1820e0c0d7",
     "changes": "Skills install in one batch: Skill Updates 1.2 downloads and checks all your picked skills with one command and installs them with one more. Nothing about a skill downloads until you have actually picked one, and every skill you're installing is read out together with one question, not one at a time. On a Mac the git check starts before the setup questions. Never tells you where to start Claude Code, only where a skill's own files go."
   },
   "overview": {

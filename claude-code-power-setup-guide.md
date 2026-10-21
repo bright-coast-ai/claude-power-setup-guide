@@ -393,6 +393,8 @@ Add your memory folders by name if you want them backed up too, but not the whol
 
 This makes GitHub the actual golden copy of your rules/memory/commands, the same pattern as §7's shared-skill sync and §13's shared team folder, just for a solo setup across your own devices: pull before you start a session on whichever machine, push after anything worth keeping changes. It won't sync automatically, that's a deliberate choice, not a gap. An automatic background sync on config/credentials is exactly the kind of silent action this guide avoids elsewhere.
 
+Back up every file type in the folder, not only .md files. An email signature saved as an HTML file, or kept outside the backed-up folder, stays on one computer without any warning (this happened twice at one client in October 2026). One badly named file can also stop the whole sync, so check the backup actually ran.
+
 ---
 
 ## 6. Semantic memory search (Chroma), optional
