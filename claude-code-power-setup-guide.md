@@ -658,6 +658,8 @@ If you signed in to Claude Code with a claude.ai account, the connectors you hav
 
 Adding one yourself looks like `claude mcp add <name> --scope user -- <the command that starts the server>`. The `--` matters: everything after it is the command that starts the server, and `--scope user` makes it available in all your projects. Verify you trust a server before you connect it: a server that fetches outside content can also carry hidden instructions, and Anthropic's documentation warns about that too.
 
+> **If a connector will not finish signing in:** if a connector will not finish signing in from the Claude desktop app, open a terminal, run `claude`, type `/mcp`, pick the connector and choose Authenticate. The desktop app sits on top of the same Claude Code, and the terminal sign-in is more reliable. Do every connector sign-in at the computer itself: when you drive the computer from your phone with remote control, a connector that asks you to log in cannot be completed from the phone.
+
 ### GitHub
 
 If you don't already have a GitHub account, create one now at github.com (free) before wiring this up, it's the backup point for everything in §5.5, not just a coding tool. For that backup job the simplest and safest tool is GitHub's own command-line tool, `gh`, which is on the list of tools §1 installs ahead of time (if it isn't installed yet, ask Claude to install it). Run `gh auth login` in a terminal window and follow the prompts (by default it signs you in through your browser with a one-time code, so you never paste a password or a token into Claude), then `gh auth status` to check it worked. No connector is needed for backups.
