@@ -893,6 +893,8 @@ Git: present
 
 Don't assume. Ask exactly three questions in one message: "What tools do you use day to day for your work? Notion, Xero, Stripe, HubSpot, Google Drive, spreadsheets, anything specific to your role. Are you a Bright Coast AI client?" (this decides whether Ask Rob applies, see Step 6) "and does your team share a folder or drive for Claude, or is this just you?" (this decides Step 3). Write down what they tell you, this determines what you actually connect later, not a fixed list everyone gets regardless of relevance. Don't ask whether they record meetings or use WhatsApp: if they name a meeting recorder or WhatsApp you already know, and Step 7 shows every ready skill anyway.
 
+On a Team or Enterprise plan, check before the session that an owner of the Claude organisation has allowed the connectors this person needs, and allowed custom connectors if you will add one. A request sent mid-session waits for that owner, and the fallback is a third-party service holding another key.
+
 If they would rather skip these questions, that is fine: mark Step 1 deferred, and Step 7 will show every ready skill anyway. Then say in one sentence that the Startup skill, which Step 7 offers, asks the deeper questions later (how technical to be, what it may read, how they like to be talked to), so there's nothing more to answer now. Don't run a second round of questions here. Once you have their answers, create `SETUP-PROGRESS.md` (see above).
 
 ### Step 2: Google Drive (only if they use it)
