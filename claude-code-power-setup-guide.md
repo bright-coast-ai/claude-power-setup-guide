@@ -183,6 +183,18 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 > - **`winget` and Git for Windows may need administrator rights.** If an install asks for them and you don't have them, ask your IT person to install it for you.
 > - **`curl.exe` or other downloads may be blocked.** The fallback is simple: open the address in your browser, save the file (right-click and choose **Save link as**; in Safari, **Download Linked File As**), and tell Claude the full path where you saved it. Claude runs the same fingerprint check on that file, so it is still checked against the catalog.
 
+### Remote control from your phone (optional)
+
+Once Claude Code is installed, you can steer it from your phone. Your computer still does the work; the phone is a remote for it.
+
+1. **Switch the setting on.** In your Claude organisation settings, turn on remote control. On a Team plan this is an admin setting.
+2. **Start it on your computer.** In Claude Code, run the remote control command. If it asks, choose to stay in the same directory you are already in.
+3. **Pick your computer on the phone.** Open the Claude app, go to the **Code** tab, and tap your computer under devices. A green dot means it is connected.
+4. **Start a new session from there.** Type or dictate your request.
+5. **Keep the computer awake and online.** If it sleeps, restarts or loses internet, the link pauses and picks up again when it is back. It cannot work while the computer is off; for that you need a hosted setup, which is a separate step.
+
+> **Watch out for two things.** If your organisation has **require trusted devices** switched on, your phone must be verified first or sign-in fails with "This session now only accepts trusted devices". Turning that setting off fixed it for the first team that hit it. And starting a session straight from the Code tab, without tapping your computer first, does not reach your computer.
+
 ---
 
 ## 2. The two levels of config
