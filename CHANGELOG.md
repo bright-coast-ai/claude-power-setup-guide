@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.5 (19 Nov 2026)
+
+- The guide is now version 3.5. The catalog, the skills and the guide now download from `https://setup.brightcoast.ai/files/`, an address on Bright Coast AI's own domain that stays the same even if the repo moves. The checks are unchanged: every file must match the catalog's fingerprint, and nothing follows a redirect.
+- The repo moved to github.com/bright-coast-ai/claude-power-setup-guide. The old address is a read-only copy that stays in sync, so a setup from before this version keeps updating exactly as before.
+- Skill Updates is now 1.3.0: it downloads from the new address, and switches you over the first time you accept this update. Your installed skills, their records and your own changes are not touched. The one-page picture is now 1.8, with links to the new addresses.
+
 ## 3.4 (27 Sep 2026)
 
 From this entry on, this number matches the guide's own version instead of counting releases separately: the two numbers were always moving together anyway, so there is now only one to read.

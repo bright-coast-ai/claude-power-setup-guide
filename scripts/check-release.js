@@ -51,6 +51,9 @@ if (cat.catalog_version !== 1) fail(`catalog_version must be 1, found ${JSON.str
 if (cat.repo !== 'bright-coast/claude-power-setup-guide') fail(`repo must be "bright-coast/claude-power-setup-guide", found ${JSON.stringify(cat.repo)}`);
 if (cat.ref !== 'stable') fail(`ref must be "stable", found ${JSON.stringify(cat.ref)}`);
 if (cat.raw_base !== 'https://raw.githubusercontent.com/bright-coast/claude-power-setup-guide/stable/') fail(`raw_base must be "https://raw.githubusercontent.com/bright-coast/claude-power-setup-guide/stable/", found ${JSON.stringify(cat.raw_base)}`);
+// repo, ref and raw_base above are frozen for good: installs from before Skill Updates 1.3.0 refuse a catalog whose values differ,
+// and the read-only copy at the old address serves this same catalog to them. New downloads use files_base on our own domain.
+if (cat.files_base !== 'https://setup.brightcoast.ai/files/') fail(`files_base must be "https://setup.brightcoast.ai/files/", found ${JSON.stringify(cat.files_base)}`);
 const ID_RE = /^[a-z][a-z0-9-]*$/;
 const ids = new Set();
 for (const s of cat.skills) {
@@ -100,7 +103,8 @@ else {
     const gv = g.match(/\*\*Guide version:\*\*\s*([\d.]+)/);
     if (!gv || gv[1] !== cat.guide.version) fail(`guide version line "${gv && gv[1]}" differs from catalog guide.version "${cat.guide.version}"`);
     else ok(`guide version ${gv[1]} matches the catalog`);
-    if (!g.includes(cat.raw_base + 'catalog.json')) fail('guide does not contain the catalog raw URL');
+    if (!g.includes(cat.files_base + 'catalog.json')) fail('guide does not contain the catalog download URL (files_base + catalog.json)');
+    if (g.includes(cat.raw_base + 'catalog.json')) fail('guide still downloads the catalog from the old raw address; use files_base');
     for (const s of cat.skills.filter((x) => x.status === 'ready')) if (!new RegExp('`' + s.id + '`|\\b' + s.name + '\\b', 'i').test(g)) fail(`guide never mentions ready skill ${s.id}`);
   }
 }

@@ -10,7 +10,7 @@ A guide and a library of skills that take Claude Code from "just installed" to p
 
 1. Install Claude Code on your own computer: the desktop app (no terminal needed), or the exact terminal command for Mac or Windows in the guide's first section. You need a paid Claude plan (Pro, Max, Team or Enterprise), or an Anthropic Console account, and note that `claude.ai/code` is the web version, which is not what this guide sets up.
 2. Log in with your Claude account.
-3. Download the guide: right-click **[claude-code-power-setup-guide.md](https://raw.githubusercontent.com/bright-coast/claude-power-setup-guide/stable/claude-code-power-setup-guide.md)** and choose **Save link as** (in Safari: **Download Linked File As**), and keep the file name ending in `.md`.
+3. Download the guide: right-click **[claude-code-power-setup-guide.md](https://setup.brightcoast.ai/claude-code-power-setup-guide.md)** and choose **Save link as** (in Safari: **Download Linked File As**), and keep the file name ending in `.md`.
 4. Open Claude Code, start a new session and say: **"Read the newest claude-code-power-setup-guide file I downloaded and run my setup."**
 
 At the start of setup Claude also gives you a link to a one-page picture of what you are building, at [setup.brightcoast.ai](https://setup.brightcoast.ai). It is optional, and you can open it in any browser.
@@ -47,7 +47,7 @@ The details are in [`docs/UPDATE-PROTOCOL.md`](docs/UPDATE-PROTOCOL.md). The rul
 
 ## Found a problem?
 
-If something does not work, or a download ever fails its fingerprint check, please open an issue at [github.com/bright-coast/claude-power-setup-guide/issues](https://github.com/bright-coast/claude-power-setup-guide/issues), or write to support@brightcoast.ai.
+If something does not work, or a download ever fails its fingerprint check, please open an issue at [github.com/bright-coast-ai/claude-power-setup-guide/issues](https://github.com/bright-coast-ai/claude-power-setup-guide/issues), or write to support@brightcoast.ai.
 
 ## Licence
 

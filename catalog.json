@@ -3,18 +3,19 @@
   "repo": "bright-coast/claude-power-setup-guide",
   "ref": "stable",
   "raw_base": "https://raw.githubusercontent.com/bright-coast/claude-power-setup-guide/stable/",
+  "files_base": "https://setup.brightcoast.ai/files/",
   "license": "Bright Coast AI Client Skills Licence 1.0",
   "guide": {
-    "version": "3.4",
+    "version": "3.5",
     "path": "claude-code-power-setup-guide.md",
-    "sha256": "dc5288788f0b0625d763b3e28cb59377a0f6b95da34540245cb076bbb241c2ea",
-    "changes": "Skills install in one batch: Skill Updates 1.2 downloads and checks all your picked skills with one command and installs them with one more. Nothing about a skill downloads until you have actually picked one, and every skill you're installing is read out together with one question, not one at a time. On a Mac the git check starts before the setup questions. Never tells you where to start Claude Code, only where a skill's own files go."
+    "sha256": "fd6d70bf3afc96ec530f36d297f46f2b06889065e48ac961c2b4de3359647c4d",
+    "changes": "A new home, nothing changes in how you set up: the catalog, the skills and the guide now download from setup.brightcoast.ai, Bright Coast AI's own address, which stays the same even if the repo moves. The repo itself moved to github.com/bright-coast-ai/claude-power-setup-guide. If you set up before this, your skills keep updating as they did."
   },
   "overview": {
-    "version": "1.7",
+    "version": "1.8",
     "path": "power-setup-field-guide.html",
-    "sha256": "b4f09155cbb55997d622dbe4d7ddce89317f020c89588ad927ccd26ccc03e12d",
-    "changes": "Matches the guide's wording on installing (Claude asks first, then carries on) and drops every instruction about where to start Claude Code. Fixes overlapping art in the finale, missing spacing in the WhatsApp card, a cut-off table on phones, and low-contrast text."
+    "sha256": "b35f339b1011d9eef5bb1648037dc1028fa4a57552e930b4982f4eb52ff0baba",
+    "changes": "Links point at the guide's new download address on setup.brightcoast.ai and the repo's new home at github.com/bright-coast-ai/claude-power-setup-guide."
   },
   "skills": [
     {
@@ -34,14 +35,14 @@
       "id": "skill-updates",
       "name": "Skill Updates",
       "status": "ready",
-      "version": "1.2.0",
-      "sha256": "323646f25319a827140ffbe4318169ec930bbdab0b7243c05f4e705b34d954ca",
+      "version": "1.3.0",
+      "sha256": "a3c4b579a4bb0dfaf12f1a84003782c82fdffe1e88f4a35f01e112bd43b63ca7",
       "category": "Housekeeping",
       "summary": "Installs and removes skills from the guide, checks whether they or the guide have a newer version, shows exactly what changed, and updates only what you approve, keeping your own changes.",
       "needs": ["Internet access", "Git, for showing and merging updates (a fresh install does not need it)"],
       "offer_if": "everyone",
       "path": "skills/skill-updates/SKILL.md",
-      "changes": "Optional: skip it and nothing breaks, it only helps once you install two or more skills together. Installing several skills is two commands total (one downloads and checks them all, one installs them all) instead of one round each. Checking for updates is review first too now: one command shows the exact changes for every outdated skill, then one further command applies everything you approve, instead of a separate round per skill. Every id, name and version this skill handles is quoted safely before it reaches a command."
+      "changes": "Downloads now come from setup.brightcoast.ai, Bright Coast AI's own address, instead of a GitHub address, so they keep working even if the repo moves. The checks are the same: every file must match the catalog's fingerprint, and nothing follows a redirect. Your installed skills and your own changes are not touched."
     },
     {
       "id": "health-check",
