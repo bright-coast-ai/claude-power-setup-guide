@@ -13,7 +13,7 @@ version: 1.1.1
 
 ## Setting this up for the first time
 
-This skill comes from the Claude Power Setup Guide repo (github.com/bright-coast/claude-power-setup-guide), which installs it into your skills folder for you.
+This skill comes from the Claude Power Setup Guide repo (github.com/bright-coast-ai/claude-power-setup-guide), which installs it into your skills folder for you.
 
 **Before going further, check that the person has a Bright Coast AI portal account and a personal token.** The portal is where the token comes from (see the next paragraph). If they don't have a portal account yet, or can't find "Personal API Token" in the portal's Settings, tell them plainly that this skill can't send anything until they do, and that they should contact Rob directly. If they aren't sure, ask them to log in to the portal and look in Settings.
 

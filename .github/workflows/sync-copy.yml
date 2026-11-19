@@ -31,6 +31,6 @@ jobs:
           chmod 600 ~/.ssh/copy_key
           ssh-keyscan -t ed25519 github.com >> ~/.ssh/known_hosts 2>/dev/null
           export GIT_SSH_COMMAND="ssh -i ~/.ssh/copy_key -o IdentitiesOnly=yes -o User=git"
-          git push ssh://github.com/bright-coast/claude-power-setup-guide.git \
+          git push --atomic ssh://github.com/bright-coast/claude-power-setup-guide.git \
             refs/remotes/origin/stable:refs/heads/stable \
             refs/remotes/origin/main:refs/heads/main

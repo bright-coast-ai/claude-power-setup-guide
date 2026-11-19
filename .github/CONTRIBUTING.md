@@ -6,7 +6,7 @@ If you use Claude Code to make the change, ask it to read this file first.
 
 ## How to suggest a change
 
-1. Start a new branch from `stable`, named after what you are changing, for example `suggest/chatgpt-memory-import`.
+1. If you have not been given write access to this repository, fork it first and work in your fork. Then start a new branch from `stable`, named after what you are changing, for example `suggest/chatgpt-memory-import`.
 2. Make your change. Keep each pull request to one topic.
 3. Open a pull request into `stable`. In the description, say what happened in a session that made you want the change, and what you changed.
 4. Wait for the review. Do not merge it yourself. The maintainer may ask questions or edit it before approving.

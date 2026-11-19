@@ -8,7 +8,7 @@
   "guide": {
     "version": "3.5",
     "path": "claude-code-power-setup-guide.md",
-    "sha256": "7403a251b12a726c5fe79594d99758f493456cfa441ba4338cf412b80a605252",
+    "sha256": "3e3e54f20a06c5b86ff0eab02ca0af5c0e7a5c8d3c1a482c50a020ad2a0643b6",
     "changes": "A new home, nothing changes in how you set up: the catalog, the skills and the guide now download from setup.brightcoast.ai, Bright Coast AI's own address, which stays the same even if the repo moves. The repo itself moved to github.com/bright-coast-ai/claude-power-setup-guide. If you set up before this, your skills keep updating as they did."
   },
   "overview": {
@@ -36,7 +36,7 @@
       "name": "Skill Updates",
       "status": "ready",
       "version": "1.3.0",
-      "sha256": "86592b51778372a6c3c96385c87f3351be32ee7a5a809bad14e4f460948bed99",
+      "sha256": "136d05bfc9d61d1c7ad9be43a8e8387ac5b891e97dc4074f00775e0fe20c36f1",
       "category": "Housekeeping",
       "summary": "Installs and removes skills from the guide, checks whether they or the guide have a newer version, shows exactly what changed, and updates only what you approve, keeping your own changes.",
       "needs": ["Internet access", "Git, for showing and merging updates (a fresh install does not need it)"],
@@ -75,7 +75,7 @@
       "name": "Ask Rob",
       "status": "ready",
       "version": "1.1.1",
-      "sha256": "fd5af2eda493dc45e94c51875c4899a90c956238edf921d35d8be025bd9d466c",
+      "sha256": "0afb80e644f31d80277526394edb68e5754d7bdd20e2d7a045d378935f31d33f",
       "category": "Get help",
       "summary": "Sends a question to Rob straight from Claude, with the context attached, and brings the reply back to you.",
       "needs": ["A Bright Coast AI client portal account and a personal token from its Settings page"],
