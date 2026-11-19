@@ -1,0 +1,36 @@
+# Keeps the read-only copy at github.com/bright-coast/claude-power-setup-guide identical to this repo,
+# so installs made before the move keep receiving updates from their saved address.
+name: Sync the old-address copy
+
+on:
+  push:
+    branches: [stable, main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sync-copy
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.repository == 'bright-coast-ai/claude-power-setup-guide'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Push stable and main to the copy
+        env:
+          COPY_SYNC_KEY: ${{ secrets.COPY_SYNC_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "$COPY_SYNC_KEY" > ~/.ssh/copy_key
+          chmod 600 ~/.ssh/copy_key
+          ssh-keyscan -t ed25519 github.com >> ~/.ssh/known_hosts 2>/dev/null
+          export GIT_SSH_COMMAND="ssh -i ~/.ssh/copy_key -o IdentitiesOnly=yes -o User=git"
+          git push ssh://github.com/bright-coast/claude-power-setup-guide.git \
+            refs/remotes/origin/stable:refs/heads/stable \
+            refs/remotes/origin/main:refs/heads/main
